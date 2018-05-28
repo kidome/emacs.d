@@ -1,6 +1,12 @@
+;; !!!NOTE:
+;; as all in .emacs.d be pushed into github/public, don't put personal's in .emacs.d
+;; otherwise, put personal's in this file ~/.emacs, don't put ~/.emacs into public
+;; BACKUP ~/.emacs into ~/.emacs.d/dot.emacs.gpg
+
+
 (require 'package)
 (add-to-list 'package-archives
-         '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (package-initialize)
 
