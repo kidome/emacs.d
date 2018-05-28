@@ -3,3 +3,5 @@ ede-projects.el
 projectile-bookmarks.eld
 elpa/
 semanticdb/
+projectile.cache
+recentf

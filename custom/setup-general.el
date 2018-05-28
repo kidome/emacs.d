@@ -57,4 +57,16 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (windmove-default-keybindings)
 
+(use-package sr-speedbar
+  :init
+  ;;(sr-speedbar-open)
+  (defun sb-expand-curren-file ()
+    "Expand current file in speedbar buffer"
+    (interactive)
+    (setq current-file (buffer-file-name))
+    (sr-speedbar-refresh)
+    (speedbar-find-selected-file current-file)
+    (speedbar-expand-line))
+  )
+
 (provide 'setup-general)

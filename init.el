@@ -24,12 +24,15 @@
 (if (version< emacs-version "24.4")
     (require 'setup-ivy-counsel)
   (require 'setup-helm)
-  (require 'setup-helm-gtags))
-;; (require 'setup-ggtags)
+ ;;choose one tags system
+ ;;(require 'setup-helm-gtags)
+ ;;(require 'setup-ggtags)
+ )
 (require 'setup-cedet)
 (require 'setup-editing)
 
 
+(require 'setup-lsp)
 
 ;; function-args
 ;; (require 'function-args)
