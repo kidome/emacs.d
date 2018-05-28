@@ -3,10 +3,9 @@
 ;; otherwise, put personal's in this file ~/.emacs, don't put ~/.emacs into public
 ;; BACKUP ~/.emacs into ~/.emacs.d/dot.emacs.gpg
 
-
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+         '("melpa" . "https://melpa.org/packages/") t)
 
 (package-initialize)
 
