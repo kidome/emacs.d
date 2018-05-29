@@ -141,7 +141,14 @@
 
     (use-package helm-xref
       :init
-      (setq xref-show-xrefs-function 'helm-xref-show-xrefs))))
+      (setq xref-show-xrefs-function 'helm-xref-show-xrefs))
+
+    (use-package helm-flx
+      :init
+      (with-eval-after-load 'helm
+        (helm-flx-mode +1)))
+
+    ))
 
 
 (provide 'setup-helm)

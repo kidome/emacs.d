@@ -1,11 +1,10 @@
 
-(with-eval-after-load 'company
-  (company-flx-mode +1)
-  (setq company-flx-limit 50) )
 
-(with-eval-after-load 'helm
-  (helm-flx-mode +1))
-
+(use-package company-flx
+  :init
+  (with-eval-after-load 'cquery
+    (company-flx-mode +1)
+    (setq company-flx-limit 50) ))
 
 (use-package cquery
   :commands lsp-cquery-enable
