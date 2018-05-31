@@ -17,6 +17,8 @@
     (with-eval-after-load 'cquery
       ;;(setq cquery-sem-highlight-method 'font-lock)
       ;;(cquery-use-default-rainbow-sem-highlight)
+      ;;(setq lsp-print-io t) ;; print lsp io to *message*
+      (setq lsp-ui-sideline-show-symbol t)
       (setq cquery-executable "/usr/local/bin/cquery"))
     (add-hook 'c-mode-common-hook #'cquery//enable)
     ))
