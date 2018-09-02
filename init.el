@@ -35,6 +35,7 @@
 (require 'setup-lsp)
 (require 'setup-python)
 
+(require 'setup-go)
 ;; function-args
 ;; (require 'function-args)
 ;; (fa-config-default)
