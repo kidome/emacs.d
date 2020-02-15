@@ -20,7 +20,7 @@
 (use-package elpy
   :init
   (progn
-    ()
+    (setq-default ighlight-indentation-mode -1)
     ))
 
 (use-package anaconda-mode
